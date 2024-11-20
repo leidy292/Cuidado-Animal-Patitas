@@ -1,0 +1,39 @@
+.content {
+	background: url(dummy-images/logo.jpg);
+}
+
+.content h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 180px;
+	color: #222;
+	line-height: 50px;
+}
+
+.content h3 {
+	text-align: center;
+	font-size: 22px;
+	color: #222;
+}
+
+/*	--------------------------------------------------
+	Global Reset & Standards
+	-------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ol,
+ul {
+	list-style: none;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}

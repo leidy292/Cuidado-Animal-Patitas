@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* coloca el contenido al centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+
+}
+
+#contenido_pincipal {
+    /*  tamaño, color  del el contenido principal */
+    width: 1700px;
+    height: 1786px;
+    padding: 0 0px;
+    margin: 0px ;
+    background: linear-gradient(to right, #f1eeed, #f7d3b8);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para mejorar la legibilidad del texto */
+
+}
+
+#contenido_pincipal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: initial;
+    background-position: center;
+    opacity: 0.6;
+    /* Ajusta el valor de opacidad aquí */
+    z-index: -1;
+    filter: brightness(0.3);
+
+    /* Opcional: para oscurecer un poco más la imagen */
+}
+
+#fixedMenu img {
+    position: relative;
+    right: 830px;
+    top: 10px;
+
+}
+
+
+/*-------------------------------------- Menu horizontal estatico===============================*/
+#fixedMenu {
+    /* Asegura que el menú esté por encima de otros elementos */
+    position: fixed;
+    top: 0;
+    width: 1700px;
+    height: 50px;
+    background-color: rgb(248, 123, 6);
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+
+}
+
+#fixedMenu ul {
+    /* Centra los elementos del menú horizontalmente */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+#fixedMenu ul li {
+    margin: 0 15px;
+}
+
+#fixedMenu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+#fixedMenu ul li a:hover {
+    background-color: #607bc7;
+    padding: 10px 20px 10px 20px;
+}
+
+#boton_lista li ul {
+    /* ocultar los submenus de el menu */
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+#boton_lista li:hover ul {
+    /* color de fondo del submenu */
+    display: block;
+    background: rgb(25, 51, 21);
+    padding: 20px;
+}
+
+#boton_lista {
+    position: relative;
+    top: -40px;
+}
+
+#boton_lista li ul li {
+    position: relative;
+
+}
+
+#content {
+    /* Asegura que el contenido no esté oculto detrás del menú fijo */
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/*------------------ color de los subtitulos h2-----------------*/
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    color: #d95232;
+}
+
+p {
+    /*justifica el texto de los parrafos*/
+    text-align: justify;
+}
+
+/*=========================  Logotipo y lema ====================================*/
+#logotipo {
+    position: relative;
+    left: 1034px;
+    top: 0px;
+
+
+}
+
+#logotipo img {
+    height: 45px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*aliniar al centro el logo*/
+    position: relative;
+    top: 70px;
+}
+
+#lema {
+    display: flex;
+    justify-content: right;
+    /*aliniar a la derecha el lema*/
+    position: relative;
+    top: 600px;
+    right: 200px;
+    color: rgb(204, 84, 3);
+}
+
+/*=========================  Redes sociales ====================================*/
+.social {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+}
+
+.social img {
+    /*tamaño de los iconos*/
+    height: 25px;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.social ul li .icon-googleplus {
+    background: #d95232;
+}
+
+.social ul li .icon-pinterest {
+    background: #ae181f;
+}
+
+.social ul li .icon-mail {
+    background: #666;
+}
+
+.social ul li a:hover {
+    /*efecto del puntero del mouse al pasar por encima de los iconos*/
+    padding: 10px 30px;
+    background: #38eaf7;
+}
+
+/*=================== seccion slide ==========================*/
+
+
+
+#boton li ul {
+    /* ocultar los submenus de el menu */
+    display: none;
+    /* ocultar los submenus de el menu */
+    position: absolute;
+    min-width: 250px;
+}
+
+#boton li:hover ul {
+    /* color de fondo del submenu */
+    display: block;
+    /* aparece el subMenu */
+    padding: 0px;
+    white-space: nowrap;
+    /*todo el contenido se mostrará en una sola línea, sin importar su longitud, y el texto no se ajustará automáticamente al ancho del contenedor.*/
+}
+
+/*===================  contenido =============================================*/
+#content {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#section1 {
+    padding: 0px;
+    height: 470px;
+    position: relative;
+    top: 580px;
+    left: 12em;
+
+}
+#section1  h2{
+    position: relative;
+    top: 80px;
+    left: -200px;
+
+}
+
+#miVideo {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border:2px solid rgb(248, 96, 9);position: relative;position: relative;
+    position: relative;
+    top: -170px;
+    left: 200px;
+    
+}
+
+
+#section1 #segundoParrafo ol {
+    padding: 0px;
+    height: 470px;
+    color: white;
+    height: auto;
+    width: 700px;
+    padding: 29px;
+    border:1px solid rgb(252, 249, 247);
+    background: rgb(248, 111, 20); 
+     position: relative;
+    top: -900px;
+    left: 160px;
+    
+}
+
+#section2 {
+    padding: 0px;
+    margin: 0px;
+    width: 350px;
+    position: relative;
+    top: 50px;
+}
+
+#section2 p {
+    /*texto tamaño , margen padin de texto*/
+    padding: 0px;
+    margin: 0px;
+    width: 450px;
+    position: relative;
+
+}
+
+#section2 img {
+    padding: 0px;
+    margin: 0px;
+    width: 450px;
+    border-radius: 10%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /*borde de imagen ovalado*/
+
+}
+
+#section3 {
+    padding: 0px;
+    margin: 0px;
+    width: min-content;
+    position: relative;
+    left: 480px;
+    top: -480px;
+
+}
+
+#section3 img {
+    padding: 0px;
+    margin: 0px;
+    width: 450px;
+    height: 300px;
+    border-radius: 10%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /*borde de imagen ovalado*/
+}
+
+#section3 p {
+    padding: 0px;
+    margin: 0px;
+    width: 450px;
+    height: 170px;
+}
+
+
+
+/*======================== Mapa localiizacion ===================*/
+.imagenMapa {
+    position: relative;
+    top: 283px;
+
+}
+
+.imagenMapa img {
+    width: 940px;
+}
+
+/*==================  Menu vertical ==================================*/
+#contenido {
+    position: relative;
+    top: 13em;
+    left: 113px;
+    width: 360px;
+    height: min-content;
+    /*ajusta al tamaño minimo*/
+}
+
+/*===================  Menu Vertical ==============================================*/
+
+#MenuVertical #boton {
+    /* estilo del menu vertical */
+    position: relative;
+    top: 0;
+    width: 250px;
+    padding: 0px 0px;
+}
+
+#MenuVertical ul {
+    /* Centra los elementos del menú horizontalmente */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#MenuVertical ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+#MenuVertical ul li a {
+    display: block;
+    color: white;
+    /*color de letra*/
+    padding: 10px 0px 2px 10px;
+    background-color: rgb(248, 103, 6);
+    /*color de fondo del menu*/
+    text-decoration: none;
+    /*para quitar la linea de hipervinculo*/
+
+}
+
+#MenuVertical ul li a:hover {
+    background-color: #ffffff;
+    color: rgb(248, 103, 6);
+    padding: 10px 0px 2px 10px;
+
+    /*todo el contenido se mostrará en una sola línea, sin importar su longitud, y el texto no se ajustará automáticamente al ancho del contenedor.*/
+}
+
+#MenuVertical ul li ul {
+    /* sub menu a la derecha */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 1px;
+    padding-left: 0;
+    white-space: nowrap;
+    /*todo el contenido se mostrará en una sola línea, sin importar su longitud, y el texto no se ajustará automáticamente al ancho del contenedor.*/
+}
+
+
+
+
+
+
+/*===============  Web realizado por  ===========================*/
+#direccion address {
+    /*....Web realizado por: Usnayo*/
+    position: relative;
+    top: -170px;
+    width: 960px;
+    left: 910px;
+
+}
+
+/*================== Pie de pagina ==================================*/
+#pie {
+    position: relative;
+    top: 330px;
+    width: 1670px;
+    padding: 15px;
+    background: #fdfbfb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#pie #creador {
+    position: relative;
+    background: rgb(204, 84, 3);
+    text-align: right;
+    padding: 10px;
+
+}
+
+#pie #creador a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+
+#pie #creador p {
+    position: relative;
+    text-align: right;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#pie #derechos p {
+    position: relative;
+    text-align: right;
+    color: #fffbfb;
+    font-weight: bold;
+
+}
+
+#pie #derechos p {
+    font-size: 18px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Borde negro alrededor del texto */
+}
+
+#pie #creador p {
+    font-size: 19px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Borde negro alrededor del texto */
+}
