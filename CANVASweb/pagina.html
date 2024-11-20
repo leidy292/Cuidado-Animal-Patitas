@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Tutos y Tips / Página web en HTML5</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css"> 
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="modernizr-2.0.6.min.js"></script>
+</head>
+<body class="contenedor general">
+    
+    <!-- Comienzo header -->
+    <header>
+        <figure class="logo">
+            <img src="imagenes/logo.jpg" alt="logo" />
+            <figcaption>
+                <h1>Mi Tema en HTML5</h1>
+            </figcaption>
+        </figure>
+        <div class="redes">
+            <img src="imagenes/redl.png" alt="redes" />
+            <img src="imagenes/red2.png" alt="redes" />
+            <img src="imagenes/red3.png" alt="redes" />
+        </div>
+    </header>
+    <!-- Fin header -->
+    
+    <!-- Comienzo navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">HTML5 y CSS3</a></li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="#">Administrador</a></li>
+        </ul>
+    </nav>
+    <!-- Fin navegación -->
+    
+    <div id="sombra-contenido">
+        <!-- Comienzo de la sección principal -->
+        <section class="articulos">
+            <div id="slider">
+                <img src="imagenes/slider.jpg" alt="slider" />
+            </div>
+            <!-- Comienzo del artículo -->
+            <article class="post">
+                <h2><a href="#">Título del Post</a></h2>
+                <figure>
+                    <a href="#"><img src="imagenes/img-post.jpg" alt="img-post" /></a>
+                </figure>
+                <p class="meta">Por <a href="#">Admin</a> El <a href="#">30/05/2012</a> En <a href="#">Pruebas</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                <div class="leermas"><a href="#">Leer Más</a></div>
+            </article>
+            <!-- Fin del artículo -->
+        </section>
+        <!-- Fin de la sección -->
+        
+        <!-- Comienzo del aside o barra lateral -->
+        <aside>
+            <div class="bloques-aside">
+                <h3>Publicidad</h3>
+                <ul>
+                    <li class="publicidad">
+                        <img src="imagenes/publicidad.jpg" alt="publicidad" />
+                    </li>
+                    <li class="publicidad">
+                        <img src="imagenes/publicidad.jpg" alt="publicidad" />
+                    </li>
+                    <li class="publicidad">
+                        <img src="imagenes/publicidad.jpg" alt="publicidad" />
+                    </li>
+                    <li class="publicidad">
+                        <img src="imagenes/publicidad.jpg" alt="publicidad" />
+                    </li>
+                </ul>
+            </div>
+            <div class="bloques-aside">
+                <h3>Buscador</h3>
+                <form class="searchform">
+                    <input type="text" onblur="if(this.value==''){this.value='Buscar...';}" onfocus="if(this.value=='Buscar...') {this.value='';}" value="Buscar..." class="searchfield">
+                    <input type="button" value="Go" class="searchbutton">
+                </form>
+            </div>
+            <div class="bloques-aside">
+                <h3>Categorías</h3>
+                <ul class="categoria">
+                    <li><a href="#">Categoría 1</a></li>
+                    <li><a href="#">Categoría 2</a></li>
+                    <li><a href="#">Categoría 3</a></li>
+                    <li><a href="#">Categoría 4</a></li>
+                    <li><a href="#">Categoría 5</a></li>
+                    <li><a href="#">Categoría 6</a></li>
+                    <li><a href="#">Categoría 7</a></li>
+                </ul>
+            </div>
+            <div class="bloques-aside">
+                <h3>Información Importante</h3>
+                <p class="info">
+                    <img src="imagenes/img-post.jpg" alt="img-post"/>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+                </p>
+            </div>
+        </aside>
+        <!-- Fin de la aside -->
+    </div>
+
+    <footer>
+        <nav class="footer">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">HTML5 y CSS3</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Administrador</a></li>
+            </ul>
+        </nav>
+        ©2012 tutosytips.com - una plantilla creada en HTML5 y CSS3
+    </footer>
+</body>
+</html>
